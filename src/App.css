@@ -1,38 +1,58 @@
-.App {
+body{
+  background-color: red;
+}
+.WeatherApp {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin: 20px auto;
+  max-height: 610px;
+  max-width: 500px;
+  padding: 4px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.WeatherApp-container {
+  background-color: #163d80;
+  background-image: linear-gradient(315deg, #09214f 0%, #385fa477 74%);
+  box-shadow: 5px 10px 10px 5px rgba(15, 15, 15);
+  max-height: 610px;
+  max-width: 525px;
+  padding: 5px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.WeatherApp-content {
+  padding: 10px 10px;
+}
+
+
+@media (max-width: 700px) {
+  
+  .WeatherApp {
+    margin: 20px auto;
+    max-height: 610px;
+    max-width: 500px;
+    padding: 4px;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .WeatherApp-container {
+    margin: 0px auto;
+    max-height: 610px;
+    max-width: 520px;
+    padding: 4px;
+    background-color: transparent;
+    box-shadow: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Swap-button {
+    height: 12px;
+  }
+
+  .React-logo {
+    height: 20px;
+  }
+
+  footer {
+    font-size: 11px;
   }
 }

@@ -1,0 +1,72 @@
+form {
+    padding: 20px 30px 25px;
+}
+
+form .form-control {
+  border: 1px solid rgb(56, 56, 56);
+  border-radius: 0;
+  box-shadow: 3px 3px 3px 2px rgb(56, 56, 56);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 25px;
+  width: 117%;
+  margin-left: 5px;
+}
+
+form .search-input {
+  box-shadow: 5px 3px 3px 1px #202a4bbd;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  padding-left: 15px;
+  border-radius: 10px;
+}
+
+.search-city-button {
+  border: 1px solid transparent;
+  color: white;
+  background-color: transparent;
+  font-size: 22px;
+  padding: 5px 10px;
+  position: relative;
+  left: 26px;
+}
+
+.search-city-button:hover {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: white;
+  transition: all 200ms ease-in-out;
+}
+
+@media (max-width: 800px) {
+  form {
+    padding: 20px 20px;
+  }
+
+  form .search-input {
+    font-size: 13px;
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 414px) {
+  form {
+    padding: 20px 20px;
+  }
+
+  form .form-control {
+    width: 120%;
+    margin-left: -6px;
+  }
+
+  form .search-input {
+    font-size: 13px;
+    padding-left: 15px;
+  }
+
+  .search-city-button {
+    padding: 5px 10px;
+    position: relative;
+    left: 19px;
+  }
+}

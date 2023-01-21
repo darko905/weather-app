@@ -1,0 +1,191 @@
+/*Loader*/
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.WeatherInfo .col-5 {
+  text-align: center;
+}
+
+.WeatherInfo .current-local-time {
+  font-size: 15px;
+  font-weight: 200;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.WeatherInfo .current-location {
+  color: white;
+  font-size: 23px;
+  font-weight: 400;
+  margin: 20px 0 -10px;
+  text-align: center;
+}
+
+.WeatherInfo .current-weather-description {
+  color: #61d9fb;
+  font-weight: 300;
+  font-size: 15px;
+  margin-top: 24px;
+}
+
+.current-weather-description:first-letter {
+  text-transform: capitalize;
+}
+
+.WeatherInfo .current-icon {
+  position: relative;
+  top: 60px;
+  left: 30px;
+}
+
+.WeatherInfo .current-temperature {
+  font-size: 50px;
+  font-weight: 400;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.WeatherInfo .unit {
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  position: relative;
+  bottom: 20px;
+  left: 5px;
+}
+
+.WeatherInfo .max-and-min-temperatures {
+  font-size: 13px;
+  font-weight: 200;
+  line-height: 28px;
+  margin-top: 18px;
+  text-align: center;
+  position: relative;
+  right: 13px;
+}
+
+.WeatherInfo .current-weather-details ul {
+  color: white;
+  font-size: 11px;
+  font-weight: 100;
+  line-height: 19px;
+  list-style: none;
+  position: relative;
+  left: 300px;
+  bottom: 105px;
+}
+.row-form{
+  align-items: center;
+}
+
+
+@media (max-width: 700px) {
+  .WeatherInfo .current-local-time {
+    font-size: 13px;
+  }
+
+  .WeatherInfo .current-location {
+    font-size: 20px;
+  }
+
+  .WeatherInfo .current-icon {
+    position: relative;
+    top: 50px;
+    left: 16px;
+  }
+
+  .WeatherInfo .current-temperature {
+    font-size: 40px;
+  }
+
+  .WeatherInfo .unit {
+    position: relative;
+    bottom: 14px;
+    left: 5px;
+  }
+
+  .WeatherInfo .max-and-min-temperatures {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  .WeatherInfo .current-weather-description {
+    font-size: 16px;
+    margin-top: 25px;
+  }
+
+  .WeatherInfo .current-weather-details ul {
+    font-size: 11px;
+    line-height: 18px;
+    position: relative;
+    left: 315px;
+    bottom: 109px;
+  }
+}
+
+@media (max-width: 414px) {
+  .WeatherInfo .current-local-time {
+    font-size: 13px;
+  }
+
+  .WeatherInfo .current-location {
+    font-size: 20px;
+  }
+
+  .WeatherInfo .current-icon {
+    position: relative;
+    top: 50px;
+    left: 20px;
+  }
+
+  .WeatherInfo .current-temperature {
+    font-size: 38px;
+  }
+
+  .WeatherInfo .unit {
+    position: relative;
+    bottom: 12px;
+    left: 5px;
+  }
+
+  .WeatherInfo .max-and-min-temperatures {
+    font-size: 12px;
+    margin-top: 25px;
+  }
+
+  .WeatherInfo .current-weather-description {
+    font-size: 15px;
+    margin-top: 25px;
+  }
+
+  .WeatherInfo .current-weather-details ul {
+    font-size: 11px;
+    line-height: 18px;
+    position: relative;
+    left: 243px;
+    bottom: 108px;
+  }
+}
