@@ -49,10 +49,10 @@ const Weather = (props) => {
   
   if (weatherData.ready) {
     return (
-      <div className="WeatherApp-content">
-        <form onSubmit={handleSubmit}>
-          <div className="row row-form">
-            <div className="col-9">
+      <div className="weatherApp-content">
+        <form onSubmit={handleSubmit} className="weather-form">
+          <div className='weather-form-search'>
+            <div className='weather-form-input'>
               <input
                 type="search"
                 className="form-control search-input"
@@ -61,7 +61,7 @@ const Weather = (props) => {
                 onChange={updateCity}
               />
             </div>
-            <div className="col-3 p-0">
+            <div className='weather-form-btn'>
               <button
                 className="search-city-button"
                 id="search-city-button"

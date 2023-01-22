@@ -7,7 +7,7 @@ import { MdLocationOn } from 'react-icons/md';
 
 export default function WeatherInfo(props) {
   return (
-    <div className="WeatherInfo">
+    <div className="weatherInfo">
        <div className="current-local-time">
         {" "}
         <FormattedTime
@@ -18,45 +18,33 @@ export default function WeatherInfo(props) {
       <div className="current-location">
         <MdLocationOn/> {props.data.city}, {props.data.country}
       </div>
+
+      <h1 className="current-weather-description">
+            {props.data.description}
+      </h1>
      
 
-      <div className="row">
-        <div className="col-3 current-icon">
+      <div className="weatherInfo-details">
+        <div className="current-icon">
           <WeatherIcon
             code={props.data.icon}
             size={60}
             alt={props.data.description}
           />
         </div>
-        <div className="col-6 text-center">
-          <h5 className="current-weather-description">
-            {props.data.description}
-            </h5>
+
+        <div className="text-center">
+          
        
-          <h6 className="current-temperature">
+          <h1 className="current-temperature">
             {""}
             {Math.round(props.data.temperature)}
             <span className="unit">°C</span>
-          </h6>
-          <h6 className="max-and-min-temperatures">
-            <FaArrowUp/> &nbsp;
-           High:
-            <span className="current-max-temprature">
-            <strong>  {" "}
-              {Math.round(props.data.temp_max)}°</strong>
-            </span>
-            <strong>&nbsp;&nbsp;|</strong>&nbsp;&nbsp;
-            <FaArrowDown/> &nbsp;
-            Low:{" "}
-            <span className="current-min-temperature">
-             <strong> {Math.round(props.data.temp_min)}°</strong>
-            </span>
-          </h6>
+          </h1>
+          
         </div>
-            </div>
 
-
-      <div className="col-4 current-weather-details">
+        <div className="current-weather-details">
         <ul>
           <li className="real-feel">
             <FaThermometerEmpty/>
@@ -73,6 +61,26 @@ export default function WeatherInfo(props) {
           </li>
         </ul>
       </div>
+      
+    </div>
+    <div className="max-and-min-temperatures">
+      <FaArrowUp/> &nbsp;
+      High:
+      <span className="current-max-temprature">
+      <strong>  {" "}
+        {Math.round(props.data.temp_max)}°</strong>
+      </span>
+      <strong>&nbsp;&nbsp;|</strong>&nbsp;&nbsp;
+      <FaArrowDown/> &nbsp;
+      Low:{" "}
+      <span className="current-min-temperature">
+        <strong> {Math.round(props.data.temp_min)}°</strong>
+      </span>
+    </div>
+
+
+
+      
     </div>
   )
 }

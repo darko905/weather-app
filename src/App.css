@@ -1,7 +1,7 @@
-body{
-  background-color: red;
+body {
+  background-color: #09214f;
 }
-.WeatherApp {
+.weatherApp {
   font-family: "Poppins", sans-serif;
   color: white;
   margin: 20px auto;
@@ -11,48 +11,51 @@ body{
   text-align: center;
 }
 
-.WeatherApp-container {
+.weatherApp-container {
   background-color: #163d80;
   background-image: linear-gradient(315deg, #09214f 0%, #385fa477 74%);
   box-shadow: 5px 10px 10px 5px rgba(15, 15, 15);
-  max-height: 610px;
-  max-width: 525px;
   padding: 5px;
   text-align: center;
 }
 
-.WeatherApp-content {
+.weatherApp-content {
   padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-form-search{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.weather-form-btn{
+  align-items: center;
 }
 
 
+
 @media (max-width: 700px) {
-  
-  .WeatherApp {
+
+  .weatherApp {
     margin: 20px auto;
     max-height: 610px;
     max-width: 500px;
     padding: 4px;
   }
 
-  .WeatherApp-container {
+  .weatherApp-container {
     margin: 0px auto;
     max-height: 610px;
     max-width: 520px;
     padding: 4px;
     background-color: transparent;
     box-shadow: none;
+    background-image: none;
   }
-
-  .Swap-button {
-    height: 12px;
-  }
-
-  .React-logo {
-    height: 20px;
-  }
-
-  footer {
-    font-size: 11px;
+  .weather-form-search{
+    align-items: center;
   }
 }

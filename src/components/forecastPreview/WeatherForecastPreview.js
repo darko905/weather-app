@@ -3,6 +3,7 @@ import axios from 'axios';
 import WeatherForecastDay from '../forecastDay/WeatherForecastDay';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import '../weather/Weather.css';
 
 
 
@@ -22,8 +23,8 @@ const WeatherForecastPreview = (props) => {
     
     if (loaded) {
         return (
-          <div className="WeatherForecast">
-            <div className="WeatherForecast-header">
+          <div className="weatherForecast">
+            <div className="weatherForecast-header">
               Next 5 Days 
             </div>
         
@@ -54,7 +55,10 @@ const WeatherForecastPreview = (props) => {
         axios.get(apiUrl).then(handleResponse);
     
         return (
-          <div className="lds-dual-ring"></div>
+          <div className='loader'>
+            <div className="lds-dual-ring"></div>
+          </div>
+          
           
           
         );
